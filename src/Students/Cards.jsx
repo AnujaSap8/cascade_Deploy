@@ -9,8 +9,8 @@ import Base64Downloader from 'common-base64-downloader-react';
 //import { useEffect, useState } from 'react';
 //import errorBondary from '../components/Error';
 //import Col from 'react-bootstrap/Col';
+import url from "../url";
 //import Row from 'react-bootstrap/Row';
-import url from '../url';
 
 export default class PostTitles extends Component {
 
