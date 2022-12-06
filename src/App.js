@@ -39,7 +39,7 @@ function App() {
             </div>
           </div>
         </div>
-
+        
         <div className="auth-wrapper">
           <div className="auth-inner">
             <Routes>

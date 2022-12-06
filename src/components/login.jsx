@@ -1,6 +1,5 @@
 import React, { useState, Text } from 'react'
-import errorBoundary from './Error'
-import url from "../url";
+import url from '../url';
 
 export default function Login() {
 
@@ -16,7 +15,6 @@ export default function Login() {
   }
 
   return (
-    <errorBoundary>
     <div>
       <form>
         <h3>Sign In</h3>
@@ -90,12 +88,12 @@ export default function Login() {
                     window.location.href = "/sign-in"
                   }
 
-                  else if (resp.data.role_id == 0) {
+                  else if (resp.data.role_id === 0) {
                     console.log("Role Id of student")
                     window.location.href = "/userDashboard"
 
                   }
-                  else if (resp.data.role_id == 3) {
+                  else if (resp.data.role_id === 3) {
                     console.log("Role Id of student")
                     window.location.href = "/DeanDash"
 
@@ -113,9 +111,6 @@ export default function Login() {
           </button>
         </div>
         <p className="forgot-password text-right">
-          <a href="#">Forgot password?</a>
-        </p>
-        <p className="forgot-password text-right">
           <a href="/sign-up"> New User</a>
         </p>
       </form>
@@ -123,6 +118,5 @@ export default function Login() {
             {resp}
           </Text> */}
     </div>
-    </errorBoundary>
   )
 }
